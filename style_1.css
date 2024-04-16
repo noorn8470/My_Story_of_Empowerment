@@ -1,0 +1,79 @@
+body{
+    background-color:rgb(237, 184, 248);
+    align-content : center;
+    display: flex;               /* Establishes a flex container */
+    flex-direction: column;      /* Stacks flex items vertically */
+    justify-content: center;     /* Centers flex items along the main axis (vertically, in this case) */
+    align-items: center;         /* Centers flex items along the cross axis (horizontally) */
+    min-height: 100vh;           /* Minimum height of the viewport's full height */
+    margin: 0;                   /* Removes default margin of the body */
+    padding: 0;                  /* Removes default padding of the body */
+    text-align: center; /* This will help to center inline elements and text within children if not overridden */
+};
+
+#Home{
+    width: 100%;                 /* Takes the full width of the flex container (body) */
+    display: flex;               /* Makes #home itself a flex container */
+    justify-content: center;     /* Centers its children (the image) horizontally */
+    align-items: center;         /* Centers its children (the image) vertically */
+    background-color: aquamarine;
+}
+
+#home img {
+    width: 20%;                  /* Width of the image as specified */
+    height: auto;                /* Maintains the aspect ratio of the image */
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i5.walmartimages.com/seo/o-b-Original-Applicator-Free-Tampons-Unscented-Regular-40-Ct_73e05239-a299-4349-9b5b-c2eeda4ca0cf.42ad870721c84968ba2a0881f9190bd6.jpeg');
+    /* Example background color; adjust as needed */
+}
+
+.container_0 {
+    background-color:rgb(146, 146, 222);
+    display: flex;               /* Enables flexbox layout */
+    justify-content: center;     /* Centers children horizontally in the container */
+    align-items: center;         /* Centers children vertically in the container */
+    height: 100px;               /* Optional: Adjust height as needed to see vertical centering */
+    width: 100%;  
+                   /* Optional: Ensure the container spans the full width of its parent */
+}
+
+.bar-button {
+    margin: 0 10px;              /* Adds horizontal spacing between buttons */
+    text-decoration: none;       /* Removes underline from links */
+    color: black;                /* Set the text color for links, adjust as needed */
+    font-size: 16px;             /* Optional: Adjust font size as desired */
+}
+
+
+.container_1{
+    background-color:green;
+    align-content: center;
+    text-align: center;          /* Centers the text inside the container */
+    width: 100%;                 /* Takes the full width of the flex container (body) */
+    
+};
+
+.container_2{
+    background-color:orange;
+    align-content: center;
+};
+
+.container_3{
+    background-color:cyan;
+    align-content: center;
+    text-align: center;
+   color: rgb(152, 187, 131);
+};
+
+#contact {
+    align-items: center;
+    align-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
