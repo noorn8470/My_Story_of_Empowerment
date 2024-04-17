@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(237, 184, 248);
+    background-color:#F5D3BB;
     align-content : center;
     display: flex;               /* Establishes a flex container */
     flex-direction: column;      /* Stacks flex items vertically */
@@ -7,8 +7,9 @@ body{
     align-items: center;         /* Centers flex items along the cross axis (horizontally) */
     min-height: 100vh;           /* Minimum height of the viewport's full height */
     margin: 0;                   /* Removes default margin of the body */
-    padding: 0;                  /* Removes default padding of the body */
+    padding: 25;                  /* Removes default padding of the body */
     text-align: center; /* This will help to center inline elements and text within children if not overridden */
+    font-family: Arial, Helvetica, sans-serif;
 };
 
 #Home{
@@ -20,21 +21,75 @@ body{
 }
 
 #home img {
-    width: 20%;                  /* Width of the image as specified */
+    width: 40%;                  /* Width of the image as specified */
     height: auto;                /* Maintains the aspect ratio of the image */
     align-items: center;
+}
+
+
+.title {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family:Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-weight: normal;
+    color: #A94E35;
+}
+#card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Spacing between items */
+    max-width: 1200px; /* Maximum width of the container */
+    background-color:#A94E35; /* Ensure background is different to see the container */
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px; /* Give some padding to see the content */
+}
+
+.card {
+    display: block; /* Change to block to make visible when cloned */
+    width: 300px;
+    background-color: #F5D3BB; /* Ensure cards have a different background */
+    border: 1px solid #c0e7ef;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Add padding to see the content inside */
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    font-family: "Integral CF";
+    font-weight: "bold";
+    color: #A94E35;
+  }
+.card-content {
+    font-family: "Metro Sans";
+    color: #A94E35;
+}
+.card-content h2 {
+    margin-top: 0;
+    font-size: 30px;
+    border-style:hidden;
+    background-color: #f4a973;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    gap: 20X;
+    margin: 10x;
 }
 
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://i5.walmartimages.com/seo/o-b-Original-Applicator-Free-Tampons-Unscented-Regular-40-Ct_73e05239-a299-4349-9b5b-c2eeda4ca0cf.42ad870721c84968ba2a0881f9190bd6.jpeg');
     /* Example background color; adjust as needed */
 }
 
 .container_0 {
-    background-color:rgb(146, 146, 222);
+    background-color:#A94E35;
     display: flex;               /* Enables flexbox layout */
     justify-content: center;     /* Centers children horizontally in the container */
     align-items: center;         /* Centers children vertically in the container */
@@ -46,29 +101,51 @@ body{
 .bar-button {
     margin: 0 10px;              /* Adds horizontal spacing between buttons */
     text-decoration: none;       /* Removes underline from links */
-    color: black;                /* Set the text color for links, adjust as needed */
+    color: rgb(253, 224, 224);                /* Set the text color for links, adjust as needed */
     font-size: 16px;             /* Optional: Adjust font size as desired */
 }
 
+/* Additional Styles for Empowering Story Section */
+.empowering-stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #A94E35;  /* Consistent with card container background */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.empowering-story {
+    background-color: #F5D3BB; /* Same as cards */
+    border: 1px solid #c0e7ef;
+    border-radius: 5px;
+    width: calc(33.333% - 20px); /* Three items per row minus gap */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.empowering-story img {
+    width: 100%; /* Full width of the card */
+    height: auto;
+    margin-bottom: 10px;
+}
+  
 .container_1{
-    background-color:green;
+   
     align-content: center;
     text-align: center;          /* Centers the text inside the container */
-    width: 100%;                 /* Takes the full width of the flex container (body) */
-    
-};
-
-.container_2{
-    background-color:orange;
-    align-content: center;
+    width: 100%;                 /* Takes the full width of the flex container (body) */ 
 };
 
 .container_3{
-    background-color:cyan;
     align-content: center;
     text-align: center;
-   color: rgb(152, 187, 131);
+   
 };
 
 #contact {
@@ -77,3 +154,4 @@ body{
     margin-left: 200px;
     margin-right: 200px;
 }
+
